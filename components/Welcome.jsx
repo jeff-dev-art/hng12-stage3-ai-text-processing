@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+
 import { Button } from './ui/button';
 import { useState } from 'react';
 import translate from '@/lib/language';
@@ -86,12 +86,7 @@ const Welcome = ({ data }) => {
                         Summarize
                       </span>
                       <span className="sm:hidden inline-block">Sum</span>
-                      <Image
-                        src="/icons/short.svg"
-                        width={20}
-                        height={20}
-                        alt="Short icon"
-                      />
+                      
                     </Button>
                   </div>
                 )}
@@ -104,11 +99,6 @@ const Welcome = ({ data }) => {
                     <option value="en">Engl</option>
                     <option value="zh">Chin</option>
                     <option value="hi">Hin</option>
-                    <option value="es">Span</option>
-                    <option value="fr">French</option>
-                    <option value="ar">Arab</option>
-                    <option value="bn">Beng</option>
-                    <option value="pt">Port</option>
                     <option value="ru">Rus</option>
                   </select>
                   <Button
@@ -116,12 +106,7 @@ const Welcome = ({ data }) => {
                     onClick={() => handleTranslate(i)}>
                     <span className="hidden sm:inline-block">Translate</span>
                     <span className="sm:hidden inline-block">Tran</span>
-                    <Image
-                      src="/icons/language.svg"
-                      width={20}
-                      height={20}
-                      alt="Translate icon"
-                    />
+                    
                   </Button>
                 </div>
               </div>

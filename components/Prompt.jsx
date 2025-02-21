@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { languageDetector } from '@/lib/language';
@@ -26,7 +25,7 @@ const Prompt = ({ setText, setData }) => {
 
   return (
     <form
-      className="bg-[#0e1214] backdrop-blur-3xl rounded-2xl sticky bottom-12"
+      className="bg-[#0e1214] "
       onSubmit={handleSubmit}>
       <Textarea
         name="prompt"
@@ -40,13 +39,7 @@ const Prompt = ({ setText, setData }) => {
           className="border-[0.5px] border-[#383b44] hover:shadow-btnShad transition-all translateBnt send"
           type="submit">
           Send
-          <Image
-            src="/icons/send.svg"
-            width={20}
-            height={20}
-            alt="Send icon"
-            className="transition-all duration-300"
-          />
+         
         </Button>
       </div>
     </form>

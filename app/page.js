@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <Header setData={setData} />
       <Main setData={setData} data={data} />
-      <Footer />
     </>
   );
 }
