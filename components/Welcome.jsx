@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import Start from './Start';
 import { useState } from 'react';
 import translate from '@/lib/language';
 import summarise from '@/lib/nonStreamSummarizer';
